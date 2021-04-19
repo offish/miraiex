@@ -12,8 +12,6 @@ def get_request(uri: str, market: str = "", payload: dict = {}) -> dict:
 
 
 def types(*types):
-    types = (object,) + types
-
     def check(f):
         assert len(types) == f.__code__.co_argcount
 
