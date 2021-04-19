@@ -1,18 +1,14 @@
-URL = "https://api.miraiex.com/"
-API = URL + "v2/"
-
 # no version
-TIME = URL + "time"
+TIME = "https://api.miraiex.com/time"
 
 # version 2
 # public
-MARKETS = API + "markets"
-MARKET = MARKETS + "/{}"
-TICKERS = MARKETS + "/tickers"
-
-TICKER = MARKET + "/ticker"
-HISTORY = MARKET + "/history"
-ORDERBOOKS = MARKET + "/depth"
+MARKET = "https://api.miraiex.com/v2/markets/{}"
+TICKER = "https://api.miraiex.com/v2/markets/{}/ticker"
+MARKETS = "https://api.miraiex.com/v2/markets"
+TICKERS = "https://api.miraiex.com/v2/markets/tickers"
+HISTORY = "https://api.miraiex.com/v2/markets/{}/history"
+ORDERBOOKS = "https://api.miraiex.com/v2/markets/{}/depth"
 
 # private
 # tba
