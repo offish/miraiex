@@ -20,7 +20,7 @@ pip install --upgrade miraiex
 
 ## Usage
 ```python
->>> from miraiex import MiraiEx, BITCOIN, BTC
+>>> from miraiex import MiraiEx, floatiy, BITCOIN, XRP
 
 >>> miraiex = MiraiEx()
 
@@ -29,6 +29,9 @@ pip install --upgrade miraiex
 
 >>> miraiex.get_markets() # or get_tickers()
 [{'id': 'BTCNOK', 'last': '473000.20', 'high': '533400.00', 'change': '-9.25', 'low': '460000.00', 'volume': '47.21'}, ...]
+
+>>> floatify(miraiex.get_market(XRP))
+{'last': 9.4, 'high': 10.95, 'change': -14.16, 'low': 7.44, 'volume': 1291258.8}
 ```
 
 ## Documentation
