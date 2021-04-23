@@ -1,6 +1,18 @@
 from requests import get
 
 
+def floatify(data: dict) -> dict:
+    response = {}
+
+    for key in data:
+        try:
+            response[key] = float(data[key])
+        except:
+            pass
+
+    return response
+
+
 def get_request(uri: str, market: str = "", payload: dict = {}) -> dict:
     if market:
         uri = uri.format(market)
