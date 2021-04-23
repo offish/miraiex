@@ -20,7 +20,7 @@ pip install --upgrade miraiex
 
 ## Usage
 ```python
->>> from miraiex import MiraiEx, floatiy, BITCOIN, XRP
+>>> from miraiex import MiraiEx, floatify, BITCOIN, XRP
 
 >>> miraiex = MiraiEx()
 
